@@ -1,5 +1,4 @@
-package dev.mdane.skills.location
-
+package dev.mdane.skills.experimental
 import dev.mdane.skills.experimental.PermissionsController
 import kotlinx.coroutines.flow.Flow
 
