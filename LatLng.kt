@@ -60,6 +60,6 @@ data class LatLng(
     }
 
     private companion object {
-        const val EARTH_RADIUS = 6371.00 // Radius in Kilometers default
+        const val EARTH_RADIUS = 6371.00 // Radius in Kilometers default since you guys are in Finland
     }
 }
