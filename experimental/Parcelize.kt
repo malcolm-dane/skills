@@ -11,8 +11,8 @@ import kotlinx.android.parcel.Parcelize
 
 
 */
-actual typealias Parcelize = Parcelize
+typealias Parcelize = Parcelize
 
-actual typealias Parcelable = Parcelable
+typealias Parcelable = Parcelable
 
-actual typealias IgnoredOnParcel = IgnoredOnParcel
+typealias IgnoredOnParcel = IgnoredOnParcel

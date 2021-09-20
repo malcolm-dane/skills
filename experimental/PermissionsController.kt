@@ -3,10 +3,12 @@ package dev.mdane.skills.experimental
 import android.content.Context
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
+import com.example.skills.experimental.Permission
 
-actual interface PermissionsController {
-    actual suspend fun providePermission(permission: Permission)
-    actual fun isPermissionGranted(permission: Permission): Boolean
+
+ interface PermissionsController {
+   suspend fun providePermission(permission: Permission)
+   fun isPermissionGranted(permission: Permission): Boolean
 
     fun bind(lifecycle: Lifecycle, fragmentManager: FragmentManager)
 
@@ -20,5 +22,8 @@ actual interface PermissionsController {
                 applicationContext = applicationContext
             )
         }
-    }
-}
+    }}
+
+
+
+

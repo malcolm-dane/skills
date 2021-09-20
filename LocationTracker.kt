@@ -1,11 +1,14 @@
 package dev.mdane.skills.location
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
+import com.example.skills.Altitude
+import com.example.skills.experimental.Permission
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
@@ -107,6 +110,7 @@ actual class LocationTracker(
         }
     }
 
+    @SuppressLint("MissingPermission")
     actual suspend fun startTracking() {
         permissionsController.providePermission(Permission.LOCATION)
         // if permissions request failed - execution stops here

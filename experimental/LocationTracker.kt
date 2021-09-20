@@ -1,5 +1,7 @@
-package dev.mdane.skills.experimental
+package com.example.skills.experimental
 import dev.mdane.skills.experimental.PermissionsController
+import dev.mdane.skills.location.ExtendedLocation
+import dev.mdane.skills.location.LatLng
 import kotlinx.coroutines.flow.Flow
 
 expect class LocationTracker {
